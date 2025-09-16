@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/home/rsm7/Python-Study/dependentes/bin/env python3
 """ Python Shell
 
 Esse programa tem como finalidade testar os conhecimentos adquiridos em Python
@@ -14,7 +14,7 @@ import os
 current_language = "en_US"
 msg = "Hello World"
 
-language = os.getenv("LANG", "en_US") # Add a default language ( English )
+language = os.getenv("LANG", "en_US").split(".")[0] # Add a default language ( English )
 
 if language == current_language:
     print(msg)
