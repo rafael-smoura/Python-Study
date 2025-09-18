@@ -10,25 +10,21 @@ __license__ = "no license"
 
 
 import os
-
 frases = {"pt_BR": "Olá! Mundo!",
           "fr_FR": "Bonjour! Le Monde!",
           "it_IT": "Ciao! Mondo!",
           "en_US": "Hello World" }
 
-language = os.getenv("LANG", "en_US").split(".")[0] # Add a default language ( English )
+language = "pt_BR"
+print(language)
 
-for langue, text in frases.items():
-    if language not in frases:
+if language in frases:
+        print(frases[language])
+else:
         print(frases["en_US"])
-        break
-
-    if langue == language:
-            print(text)
     
     
     
-
 
 
 
